@@ -4,7 +4,8 @@ public class userRegistrationMain {
 
     public static void main(String[] args) {
         userRegistration userRegistration = new userRegistration();
-        userRegistration.validateUserDetails();
+        //userRegistration.validateUserDetails();
+        ValidateSampleMails.email();
 
     }
 }

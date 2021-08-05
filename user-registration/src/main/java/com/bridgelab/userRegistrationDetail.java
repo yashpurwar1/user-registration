@@ -3,6 +3,7 @@ package com.bridgelab;
 public class userRegistrationDetail {
     String firstName;
     String lastName;
+    String mail;
 
     public userRegistrationDetail() {
 
@@ -22,5 +23,12 @@ public class userRegistrationDetail {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 }

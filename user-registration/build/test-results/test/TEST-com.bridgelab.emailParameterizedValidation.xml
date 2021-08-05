@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelab.emailParameterizedValidation" tests="22" skipped="0" failures="1" errors="0" timestamp="2021-08-05T17:51:46" hostname="DESKTOP-E4UM7PR" time="0.051">
+  <properties/>
+  <testcase name="validateEmailSamples[0]" classname="com.bridgelab.emailParameterizedValidation" time="0.009"/>
+  <testcase name="validateEmailSamples[1]" classname="com.bridgelab.emailParameterizedValidation" time="0.001"/>
+  <testcase name="validateEmailSamples[2]" classname="com.bridgelab.emailParameterizedValidation" time="0.001"/>
+  <testcase name="validateEmailSamples[3]" classname="com.bridgelab.emailParameterizedValidation" time="0.001"/>
+  <testcase name="validateEmailSamples[4]" classname="com.bridgelab.emailParameterizedValidation" time="0.001"/>
+  <testcase name="validateEmailSamples[5]" classname="com.bridgelab.emailParameterizedValidation" time="0.002"/>
+  <testcase name="validateEmailSamples[6]" classname="com.bridgelab.emailParameterizedValidation" time="0.0"/>
+  <testcase name="validateEmailSamples[7]" classname="com.bridgelab.emailParameterizedValidation" time="0.001"/>
+  <testcase name="validateEmailSamples[8]" classname="com.bridgelab.emailParameterizedValidation" time="0.001"/>
+  <testcase name="validateEmailSamples[9]" classname="com.bridgelab.emailParameterizedValidation" time="0.002"/>
+  <testcase name="validateEmailSamples[10]" classname="com.bridgelab.emailParameterizedValidation" time="0.002"/>
+  <testcase name="validateEmailSamples[11]" classname="com.bridgelab.emailParameterizedValidation" time="0.001"/>
+  <testcase name="validateEmailSamples[12]" classname="com.bridgelab.emailParameterizedValidation" time="0.001"/>
+  <testcase name="validateEmailSamples[13]" classname="com.bridgelab.emailParameterizedValidation" time="0.0"/>
+  <testcase name="validateEmailSamples[14]" classname="com.bridgelab.emailParameterizedValidation" time="0.003"/>
+  <testcase name="validateEmailSamples[15]" classname="com.bridgelab.emailParameterizedValidation" time="0.003"/>
+  <testcase name="validateEmailSamples[16]" classname="com.bridgelab.emailParameterizedValidation" time="0.001"/>
+  <testcase name="validateEmailSamples[17]" classname="com.bridgelab.emailParameterizedValidation" time="0.0"/>
+  <testcase name="validateEmailSamples[18]" classname="com.bridgelab.emailParameterizedValidation" time="0.005">
+    <failure message="java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.bridgelab.emailParameterizedValidation.validateEmailSamples(emailParameterizedValidation.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</failure>
+  </testcase>
+  <testcase name="validateEmailSamples[19]" classname="com.bridgelab.emailParameterizedValidation" time="0.001"/>
+  <testcase name="validateEmailSamples[20]" classname="com.bridgelab.emailParameterizedValidation" time="0.0"/>
+  <testcase name="validateEmailSamples[21]" classname="com.bridgelab.emailParameterizedValidation" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

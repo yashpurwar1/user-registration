@@ -7,41 +7,52 @@ import java.util.regex.Pattern;
 public class userRegistration {
 
     /*
-     * Purpose: Boolean method to validate first name. Condition for regex is, name
-     * should start with capital letter and name should have minimum 3 letters.
+     * Purpose: Boolean method to validate first and last name.
+     * Condition for regex is, first name and last name should start
+     * with capital letter and name should have minimum 3 letters.
      *
-     * @param firstName: First name to validate.
+     * @param name: First and last name to validate.
      */
-    public boolean validateFirstName(String firstName) {
+    public boolean validateName(String name) {
         String regex = "^[A-Z]{1}[a-z]{2,}$";
         Pattern pattern = Pattern.compile(regex);
 
         // Returns false if user does not enter any name.
-        if (firstName.isEmpty())
+        if (name.isEmpty())
             return false;
 
-        Matcher matcher = pattern.matcher(firstName);
+        Matcher matcher = pattern.matcher(name);
         return matcher.matches();
 
     }
 
     /*
-     * Purpose: Boolean method to validate first name. Condition for regex is, name
+     * Purpose: Boolean method to validate first and last name. Condition for regex is, name
      * should start with capital letter and name should have minimum 3 letters.
      */
-    public void validateUserDetails(){
+    public void validateUserDetails() {
         Scanner sc = new Scanner(System.in);
         userRegistrationDetail userDetails = new userRegistrationDetail();
         userRegistration userRegistration = new userRegistration();
 
+        // validating first name.
         System.out.println("Enter your first name");
         userDetails.setFirstName(sc.next());
-
-        boolean flag = userRegistration.validateFirstName(userDetails.getFirstName());
-        if (flag == true)
-            System.out.println("Valid");
+        boolean fName = userRegistration.validateName(userDetails.getFirstName());
+        if (fName)
+            System.out.println("First name is valid");
         else
-            System.out.println("Invalid");
+            System.out.println("First name is invalid");
+
+        // validating last name.
+        System.out.println("Enter your last name");
+        userDetails.setLastName(sc.next());
+
+        boolean lName = userRegistration.validateName(userDetails.getLastName());
+        if (lName)
+            System.out.println("Last name is valid");
+        else
+            System.out.println("Last name is invalid");
         sc.close();
     }
 }

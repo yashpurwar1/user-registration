@@ -5,6 +5,8 @@ public class userRegistrationDetail {
     String lastName;
     String mail;
     String mobileNumber;
+    String password;
+
 
 
     public userRegistrationDetail() {
@@ -41,5 +43,12 @@ public class userRegistrationDetail {
 
     public void setMobileNumber(String mobileNumber) {
         this.mobileNumber = mobileNumber;
+    }
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

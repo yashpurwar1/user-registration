@@ -39,7 +39,23 @@ public class userRegistration {
     }
 
     /*
-     * Purpose: Boolean method to validate first name,last name and mail ID of user.
+     * Purpose: Boolean method to validate user's mobile number.
+     * Condition 1: Mobile number should start with 91
+     * Condition 2: Mobile number should have 10 numbers.
+     *
+     * @param mobileNumber: mobile number to validate.
+     */
+    public boolean validateMobileNumber(String mobileNumber) {
+        // Space is not used, as console wont accept space.
+        String regex = "^(91)[0-9]{10}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(mobileNumber);
+        return matcher.matches();
+    }
+
+    /*
+     * Purpose: Boolean method to validate first name,last name,mail ID,
+     * and mobile number of user.
      */
     public void validateUserDetails() {
         Scanner sc = new Scanner(System.in);
@@ -74,6 +90,16 @@ public class userRegistration {
             System.out.println("Entered mail is valid");
         else
             System.out.println("Entered mail is invalid");
+
+        // validating Mobile Number.
+        System.out.println("Enter your mobile number");
+        userDetails.setMobileNumber(sc.next());
+
+        boolean mobileNum = userRegistration.validateMobileNumber(userDetails.getMobileNumber());
+        if (mobileNum)
+            System.out.println("Mobile number is valid");
+        else
+            System.out.println("Mobile number is invalid");
         sc.close();
     }
 }
